@@ -1,38 +1,48 @@
 *{
-  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
   margin: 0;
 }
-section{
-  height: 100vh;
+
+
+.contenedor{
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
 }
 
-div{
+.contenedor .banda{
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100%;
-  width: 100%;
-  text-align: center;
+  height: 100vh;
+  flex-grow: 1;
 }
 
-section :nth-child(1){
+.contenedor > *:hover{
+  transform: rotate(180deg);
+}
+
+.contenedor :nth-child(1){
 background: #0ff ;
 }
-section :nth-child(2){
+.contenedor :nth-child(2){
 background: #0ee ;
 }
-section :nth-child(3){
+.contenedor :nth-child(3){
 background: #0dd ;
 }
-section :nth-child(4){
+.contenedor :nth-child(4){
 background: #0cc ;
 }
-section :nth-child(5){
+.contenedor :nth-child(5){
 background: #0bb ;
 }
 
-
+/*Transision de colores al siguiente div*/
+section :nth-child(2):hover~{
+background: #0ee ;
+}
