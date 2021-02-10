@@ -16,7 +16,23 @@ div{
   justify-content: center;
   height: 100%;
   width: 100%;
-  color: #fff;
-  background: linear-gradient(to left, red, blue);
   text-align: center;
 }
+
+section :nth-child(1){
+background: #0ff ;
+}
+section :nth-child(2){
+background: #0ee ;
+}
+section :nth-child(3){
+background: #0dd ;
+}
+section :nth-child(4){
+background: #0cc ;
+}
+section :nth-child(5){
+background: #0bb ;
+}
+
+
